@@ -26,6 +26,8 @@ jobs:
         run: pip install pyyaml jinja2
       - name: Generate site
         run: python generate.py
+      - name: Add CNAME for custom domain
+        run: cp CNAME output/CNAME
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
