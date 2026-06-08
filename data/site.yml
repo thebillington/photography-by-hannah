@@ -1,0 +1,35 @@
+title: Photography by Hannah
+brand: Photography by Hannah
+description: Relaxed wedding and family photography by Hannah, covering North Lincolnshire and beyond. Wedding Photographer of the Year (Northern England) - capturing real moments with a good eye for detail.
+base_url: https://photographybyhannah.uk
+og_image: /images/hero-photo.jpg
+
+colors:
+  background: "#FDF6EE"
+  surface: "#FFFFFF"
+  text_dark: "#3D2C2E"
+  text_mid: "#8C6E5D"
+  text_light: "#B8A094"
+  primary: "#8BA989"
+  primary_dark: "#6B8769"
+  accent: "#D4856E"
+  accent_light: "#E8C4B0"
+  gold: "#D4A373"
+  light_section: "#F5EDE4"
+  dark_bg: "#2C1810"
+
+fonts:
+  heading: Playfair Display
+  handwritten: Style Script
+  body: Nunito
+
+images:
+  logo: /images/logo.png
+  hero_photo: /images/hero-photo.jpg
+  about_photo: /images/about-photo.jpg
+  gallery_placeholder: /images/gallery-placeholder.jpg
+
+contact:
+  email: photographyhannahdobson@gmail.com
+  facebook: https://www.facebook.com/photographybyhannahdobson
+  instagram: https://www.instagram.com/photographybyhannahdobson

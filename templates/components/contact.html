@@ -1,0 +1,52 @@
+<section id="contact" class="relative py-20 md:py-28 px-6 overflow-hidden" style="background: linear-gradient(135deg, {{ site.colors.text_dark }} 0%, {{ site.colors.dark_bg }} 100%);">
+  <!-- Decorative dots -->
+  <div class="absolute top-0 left-0 right-0 h-32 wildflower-dots opacity-10"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 blob opacity-5 animate-float" style="background-color: var(--accent);"></div>
+
+  <div class="max-w-6xl mx-auto relative">
+    <div class="grid md:grid-cols-2 gap-12 md:gap-20">
+      <div class="fade-up">
+        <span class="font-hand text-2xl" style="color: var(--accent);">{{ contact.section_label }}</span>
+        <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl mt-2 mb-6" style="color: white;">{{ contact.title }}</h2>
+        <p class="text-base md:text-lg leading-relaxed mb-10" style="color: {{ site.colors.text_light }};">{{ contact.subtitle }}</p>
+
+        <div class="flex flex-col gap-5">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background-color: {{ site.colors.accent }}22;">
+              <i data-lucide="mail" style="width:20px;height:20px;color:var(--accent);"></i>
+            </div>
+            <div>
+              <p class="text-xs font-medium uppercase tracking-wider mb-1" style="color: {{ site.colors.text_light }};">Email</p>
+              <a href="mailto:{{ site.contact.email }}" class="text-sm font-semibold" style="color: white;">{{ site.contact.email }}</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background-color: {{ site.colors.accent }}22;">
+              <i data-lucide="camera" style="width:20px;height:20px;color:var(--accent);"></i>
+            </div>
+            <div>
+              <p class="text-xs font-medium uppercase tracking-wider mb-1" style="color: {{ site.colors.text_light }};">Social</p>
+              <div class="flex gap-3">
+                <a href="{{ site.contact.facebook }}" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold transition-all hover:opacity-80" style="color: white;">Facebook</a>
+                <span style="color: {{ site.colors.text_light }};">|</span>
+                <a href="{{ site.contact.instagram }}" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold transition-all hover:opacity-80" style="color: white;">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up flex flex-col items-center justify-center">
+        <div class="polaroid rounded-sm shadow-xl mb-8" style="transform: rotate(3deg); max-width: 300px;">
+          <div class="aspect-square overflow-hidden">
+            <div style="background: linear-gradient(135deg, var(--accent), var(--gold), var(--primary)); opacity: 0.8; width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+        <a href="mailto:{{ site.contact.email }}" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-semibold font-body text-base transition-all duration-300 hover:scale-105 hover:shadow-lg" style="background-color: var(--accent); color: white;">
+          {{ contact.cta_label }} <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
+        </a>
+        <p class="text-xs mt-6 text-center max-w-xs" style="color: {{ site.colors.text_light }};">{{ contact.newsletter_text }}</p>
+      </div>
+    </div>
+  </div>
+</section>

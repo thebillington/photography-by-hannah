@@ -1,0 +1,53 @@
+section_label: Portfolio
+title: A glimpse into the <span class="highlight">stories I've told</span>
+subtitle: A tiny selection of the beautiful moments I've been trusted to capture. For more, follow along on Instagram and Facebook.
+
+images:
+  - src: /images/gallery/wedding-kiss.jpg
+    alt: Bride and groom sharing a kiss at the altar
+    type: wedding
+  - src: /images/gallery/wedding-dance-kiss.jpg
+    alt: Couple sharing a romantic first dance kiss
+    type: wedding
+  - src: /images/gallery/married-couple-wedding-kiss.jpg
+    alt: Married couple embracing after the ceremony
+    type: wedding
+  - src: /images/gallery/wedding-lads.jpg
+    alt: Groom and groomsmen laughing together
+    type: wedding
+  - src: /images/gallery/siblings.jpg
+    alt: Two siblings playing together outdoors
+    type: family
+  - src: /images/gallery/family-with-dog-in-woods.jpg
+    alt: Family with their dog during a woodland shoot
+    type: family
+  - src: /images/gallery/kid-sitting-in-chair.jpg
+    alt: Toddler sitting in a chair during a portrait session
+    type: family
+  - src: /images/gallery/school-photos.jpg
+    alt: School portrait photography
+    type: family
+  - src: /images/gallery/prom.jpg
+    alt: Prom portraits
+    type: family
+  - src: /images/gallery/cake-smash.jpg
+    alt: First birthday cake smash photoshoot
+    type: family
+  - src: /images/gallery/infant-cake-smash.jpg
+    alt: Baby girl enjoying her cake smash session
+    type: family
+  - src: /images/gallery/newborn-smile.jpg
+    alt: Newborn baby smiling during a studio session
+    type: family
+  - src: /images/gallery/newborn-basket.jpg
+    alt: Newborn baby sleeping in a woven basket
+    type: family
+  - src: /images/gallery/newborn-wrap.jpg
+    alt: Newborn baby wrapped in a cozy swaddle
+    type: family
+  - src: /images/gallery/santa.jpg
+    alt: Seasonal Santa mini-session portrait
+    type: family
+  - src: /images/gallery/labrador.jpg
+    alt: Labrador dog portrait
+    type: family

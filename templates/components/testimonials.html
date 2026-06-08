@@ -1,0 +1,41 @@
+<section id="testimonials" class="relative py-20 md:py-28 px-6 overflow-hidden">
+  <div class="absolute bottom-20 right-10 w-64 h-64 blob opacity-8 animate-float-delayed" style="background-color: var(--gold);"></div>
+
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-up text-center mb-14">
+      <span class="font-hand text-2xl" style="color: var(--accent);">{{ testimonials.section_label }}</span>
+      <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl mt-2 mb-6" style="color: var(--text-dark);">{{ testimonials.title }}</h2>
+      <p class="text-base md:text-lg max-w-2xl mx-auto leading-relaxed" style="color: var(--text-mid);">{{ testimonials.subtitle }}</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for testimonial in testimonials.testimonials %}
+      <div class="testimonial-card p-8 rounded-2xl relative fade-up" style="background-color: white; box-shadow: 0 4px 24px rgba(61,44,46,0.06);">
+        <!-- Decorative quote mark -->
+        <div class="font-hand text-6xl leading-none mb-2" style="color: var(--accent); opacity: 0.3;">"</div>
+        <p class="text-sm leading-relaxed mb-6 italic" style="color: var(--text-mid);">"{{ testimonial.quote }}"</p>
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-semibold" style="color: var(--text-dark);">{{ testimonial.name }}</p>
+            <span class="text-xs font-medium" style="color: var(--accent);">{{ testimonial.type }}</span>
+          </div>
+          <div class="flex gap-0.5">
+            <i data-lucide="star" style="width:14px;height:14px;color:var(--gold);fill:var(--gold);"></i>
+            <i data-lucide="star" style="width:14px;height:14px;color:var(--gold);fill:var(--gold);"></i>
+            <i data-lucide="star" style="width:14px;height:14px;color:var(--gold);fill:var(--gold);"></i>
+            <i data-lucide="star" style="width:14px;height:14px;color:var(--gold);fill:var(--gold);"></i>
+            <i data-lucide="star" style="width:14px;height:14px;color:var(--gold);fill:var(--gold);"></i>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="fade-up text-center mt-10">
+      <p class="text-sm" style="color: var(--text-mid);">Over 200 five-star reviews on Facebook</p>
+      <a href="{{ site.contact.facebook }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-3 text-sm font-semibold transition-all duration-300 hover:scale-105" style="color: var(--accent);">
+        <i data-lucide="external-link" style="width:14px;height:14px;"></i> See all reviews
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+<section id="about" class="relative py-20 md:py-28 px-6 overflow-hidden" style="background-color: {{ site.colors.light_section }};">
+  <!-- Decorative -->
+  <div class="absolute top-10 right-10 w-48 h-48 blob opacity-10 animate-float-delayed" style="background-color: var(--gold);"></div>
+  <div class="absolute bottom-10 left-10 w-32 h-32 blob opacity-8 animate-float" style="background-color: var(--primary);"></div>
+
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-up text-center mb-14">
+      <span class="font-hand text-2xl" style="color: var(--accent);">{{ about.section_label }}</span>
+      <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl mt-2" style="color: var(--text-dark);">{{ about.title }}</h2>
+    </div>
+
+    <div class="grid md:grid-cols-5 gap-10 md:gap-16 items-start">
+      <div class="md:col-span-3 fade-up">
+        <p class="font-heading text-xl md:text-2xl italic leading-relaxed mb-6" style="color: var(--text-dark);">{{ about.intro }}</p>
+        <div style="color: var(--text-mid);">
+          {% for paragraph in about.paragraphs %}
+          <p class="text-base leading-relaxed mb-4">{{ paragraph }}</p>
+          {% endfor %}
+        </div>
+        <a href="{{ about.cta_href }}" class="inline-flex items-center gap-2 mt-6 px-7 py-3.5 rounded-full font-semibold font-body transition-all duration-300 hover:scale-105 hover:shadow-lg" style="background-color: var(--accent); color: white;">
+          {{ about.cta_label }} <i data-lucide="heart" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+
+      <div class="md:col-span-2 relative fade-up">
+        <div class="photo-stack mb-8">
+          <div class="polaroid rounded-sm shadow-lg" style="transform: rotate(-3deg);">
+            <div class="aspect-[3/4] overflow-hidden">
+              <img src="{{ site.images.about_photo }}" alt="Hannah" loading="lazy" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards -->
+        <div class="flex flex-col gap-3 mt-8">
+          {% for award in about.awards %}
+          <div class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 hover:scale-[1.02]" style="background-color: white; box-shadow: 0 2px 12px rgba(61,44,46,0.06);">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: {{ site.colors.gold }}22;">
+              <i data-lucide="star" style="width:14px;height:14px;color:var(--gold);"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold" style="color: var(--text-dark);">{{ award.title }}</p>
+              <p class="text-xs" style="color: var(--text-mid);">{{ award.subtitle }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

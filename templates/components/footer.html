@@ -1,0 +1,24 @@
+<footer class="py-10 px-6" style="background-color: {{ site.colors.dark_bg }};">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background-color: {{ site.colors.primary }}33;">
+        <i data-lucide="camera" style="width:18px;height:18px;color:var(--primary);"></i>
+      </div>
+      <div>
+        <span class="font-hand text-xl" style="color: {{ site.colors.text_light }};">{{ site.brand }}</span>
+        <p class="text-xs" style="color: {{ site.colors.text_mid }};">North Lincolnshire</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="{{ site.contact.facebook }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110" style="background-color: {{ site.colors.primary }}22; color: var(--primary);" aria-label="Facebook">
+        <i data-lucide="facebook" style="width:15px;height:15px;"></i>
+      </a>
+      <a href="{{ site.contact.instagram }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110" style="background-color: {{ site.colors.accent }}22; color: var(--accent);" aria-label="Instagram">
+        <i data-lucide="instagram" style="width:15px;height:15px;"></i>
+      </a>
+    </div>
+
+    <p class="text-xs text-center md:text-right" style="color: {{ site.colors.text_mid }};">&copy; {{ current_year }} Photography by Hannah. All rights reserved.</p>
+  </div>
+</footer>

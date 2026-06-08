@@ -1,0 +1,45 @@
+section_label: What I Offer
+title: Every love story deserves to be <span class="highlight">beautifully told</span>
+subtitle: Whether you're saying "I do", growing your family, or simply want to capture this season of life - I'll make it feel relaxed, natural, and completely you.
+
+services:
+  - title: Wedding Photography
+    description: Full-day coverage from getting-ready to the dance floor. I'll be there to capture every tear, laugh, and spontaneous moment - with a relaxed, documentary-style approach that feels like having a friend with a camera.
+    icon: heart
+    features:
+      - Full-day coverage available
+      - Digital gallery included
+      - Engagement shoot options
+      - Albums available
+  - title: Family Photography
+    description: Outdoor sessions in beautiful natural settings - woodland paths, golden beach light, open countryside. No stiff posing, just your family being yourselves. These sessions are relaxed, unhurried, and full of genuine connection.
+    icon: users
+    features:
+      - Outdoor natural settings
+      - Relaxed, candid style
+      - All digital files included
+      - Print-ready gallery
+  - title: Mini Sessions
+    description: Keep an eye on my Facebook and Instagram for one-off mini sessions throughout the year - seasonal shoots, bonfire night mini's, Christmas mini sessions, and more. These sell out fast, so follow along to grab a spot.
+    icon: camera
+    features:
+      - Seasonal themes
+      - Quick 20-30 min sessions
+      - Digital images included
+      - Follow on socials for dates
+  - title: Outdoor & Adventure Shoots
+    description: If your heart belongs outdoors, let's go on an adventure. Engagement shoots, couples sessions, maternity shoots - anywhere from the Lincolnshire Wolds to the coast. I'll carry the bags, you bring the energy.
+    icon: compass
+    features:
+      - Location scouting included
+      - Golden hour magic
+      - Adventure-ready
+      - Couples & maternity welcome
+  - title: Studio Sessions
+    description: Intimate studio sessions for newborns, portraits, and small family shoots. Soft natural light, zero rush, and all the time you need to feel comfortable.
+    icon: home
+    features:
+      - Natural light setup
+      - Flexible scheduling
+      - Cosy, relaxed vibe
+      - Available on request

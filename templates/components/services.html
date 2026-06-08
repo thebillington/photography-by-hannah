@@ -1,0 +1,37 @@
+<section id="services" class="relative py-20 md:py-28 px-6 overflow-hidden">
+  <div class="absolute top-0 left-0 right-0 h-4 wildflower-dots opacity-30"></div>
+
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-up text-center mb-14">
+      <span class="font-hand text-2xl" style="color: var(--accent);">{{ services.section_label }}</span>
+      <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl mt-2 mb-6" style="color: var(--text-dark);">{{ services.title }}</h2>
+      <p class="text-base md:text-lg max-w-2xl mx-auto leading-relaxed" style="color: var(--text-mid);">{{ services.subtitle }}</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for service in services.services %}
+      <div class="service-card p-8 rounded-2xl relative overflow-hidden fade-up" style="background-color: white; box-shadow: 0 4px 24px rgba(61,44,46,0.06);">
+        <!-- Torn edge top decoration -->
+        <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(90deg, var(--accent), var(--gold), var(--primary), var(--accent));"></div>
+
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background-color: {{ site.colors.primary }}15;">
+          <i data-lucide="{{ service.icon }}" style="width:28px;height:28px;color:var(--primary);"></i>
+        </div>
+        <h3 class="font-heading text-xl mb-3" style="color: var(--text-dark);">{{ service.title }}</h3>
+        <p class="text-sm leading-relaxed mb-5" style="color: var(--text-mid);">{{ service.description }}</p>
+
+        {% if service.features %}
+        <ul class="space-y-2">
+          {% for feature in service.features %}
+          <li class="flex items-center gap-2 text-xs" style="color: var(--text-mid);">
+            <i data-lucide="check" style="width:14px;height:14px;color:var(--primary); flex-shrink:0;"></i>
+            {{ feature }}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

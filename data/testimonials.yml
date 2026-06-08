@@ -1,0 +1,23 @@
+section_label: Kind Words
+title: What couples & families <span class="highlight">are saying</span>
+subtitle: Over 200 five-star reviews and a whole lot of love. Here are just a few kind words from the wonderful people I've had the joy of photographing.
+
+testimonials:
+  - quote: "Hannah was absolutely incredible from start to finish. She made us feel so at ease on our wedding day - we barely noticed she was there, but somehow she captured every single special moment. Our photos are everything we dreamed of and more."
+    name: Sarah & James
+    type: Wedding
+  - quote: "We've done two family shoots with Hannah now and both times she's been amazing with the kids. My boys are not the easiest to photograph but she was so patient and playful. The photos are beautiful, natural, and so 'us'."
+    name: Laura
+    type: Family
+  - quote: "Book the mini session! I was hesitant but honestly one of the best decisions. Hannah captured my daughter's personality perfectly. We got so many gorgeous shots in just 20 minutes. Can't wait for the next one."
+    name: Emma
+    type: Mini Session
+  - quote: "Our engagement shoot with Hannah was pure magic. We wandered through a field at golden hour and she made us feel like the only people in the world. The photos took our breath away. If you're considering her, just book her - you won't regret it."
+    name: Chloe & Tom
+    type: Engagement
+  - quote: "Hannah photographed our wedding last summer and we still look at our album every single week. She caught things we didn't even see happening. The way she captures emotion is a genuine gift. Cannot recommend her enough."
+    name: Emily & Dan
+    type: Wedding
+  - quote: "The most natural, relaxed photographer we've ever worked with. No awkward posing, just genuine laughter and connection. Our family photos are the best we've ever had. Thank you Hannah!"
+    name: Rebecca
+    type: Family

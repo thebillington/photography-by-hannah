@@ -1,0 +1,32 @@
+<section id="gallery" class="relative py-20 md:py-28 px-6 overflow-hidden" style="background-color: {{ site.colors.light_section }};">
+  <div class="absolute top-20 left-10 w-56 h-56 blob opacity-8 animate-float" style="background-color: var(--accent);"></div>
+
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-up text-center mb-14">
+      <span class="font-hand text-2xl" style="color: var(--accent);">{{ gallery.section_label }}</span>
+      <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl mt-2 mb-6" style="color: var(--text-dark);">{{ gallery.title }}</h2>
+      <p class="text-base md:text-lg max-w-2xl mx-auto leading-relaxed" style="color: var(--text-mid);">{{ gallery.subtitle }}</p>
+    </div>
+
+    <div class="masonry fade-up">
+      {% for image in gallery.images %}
+      {% set rots = ['0.5', '-0.5', '1', '-1', '0.3'] %}
+      <div class="gallery-item masonry-item rounded-xl overflow-hidden shadow-md transition-all duration-300" style="transform: rotate({{ rots[loop.index0 % 5] }}deg);">
+        <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy" class="w-full h-auto">
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-10 fade-up">
+      <p class="text-sm mb-4" style="color: var(--text-mid);">Follow along for more moments</p>
+      <div class="flex justify-center gap-4">
+        <a href="{{ site.contact.facebook }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:scale-105" style="background-color: {{ site.colors.primary }}; color: white;">
+          <i data-lucide="facebook" style="width:16px;height:16px;"></i> Facebook
+        </a>
+        <a href="{{ site.contact.instagram }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:scale-105" style="background-color: var(--accent); color: white;">
+          <i data-lucide="instagram" style="width:16px;height:16px;"></i> Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

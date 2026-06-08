@@ -1,0 +1,13 @@
+links:
+  - label: Home
+    href: "#hero"
+  - label: About
+    href: "#about"
+  - label: Services
+    href: "#services"
+  - label: Gallery
+    href: "#gallery"
+  - label: Kind Words
+    href: "#testimonials"
+  - label: Contact
+    href: "#contact"

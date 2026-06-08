@@ -1,0 +1,14 @@
+badge: Wedding & Family Photographer
+greeting: Hi there, I'm Hannah
+title: Capturing life's most <span class="highlight">beautifully honest</span> moments
+subtitle: Relaxed, natural photography for weddings and families across North Lincolnshire and beyond. I love to travel for weddings - with my camera always ready for an adventure.
+awards:
+  - Wedding Photographer of the Year - Northern England
+  - Top 3 Photographer - North Lincolnshire
+  - AFNS Award Winner - May 2021
+cta_primary:
+  label: Let's Create Memories
+  href: "#contact"
+cta_secondary:
+  label: See My Work
+  href: "#gallery"
