@@ -1,15 +1,15 @@
 <header id="hero" class="relative min-h-screen flex items-center pt-20 pb-16 md:pt-28 md:pb-24 px-6 overflow-hidden">
   <!-- Decorative blobs -->
-  <div class="absolute top-32 -right-20 w-80 h-80 blob opacity-10 animate-float" style="background-color: var(--primary);"></div>
-  <div class="absolute bottom-20 -left-16 w-64 h-64 blob opacity-8 animate-float-delayed" style="background-color: var(--accent);"></div>
-  <div class="absolute top-1/3 left-1/4 w-40 h-40 blob opacity-6 animate-float-slow" style="background-color: var(--gold);"></div>
+  <div class="absolute top-32 -right-20 w-80 h-80 blob opacity-10 animate-float hidden md:block" style="background-color: var(--primary);"></div>
+  <div class="absolute bottom-20 -left-16 w-64 h-64 blob opacity-8 animate-float-delayed hidden md:block" style="background-color: var(--accent);"></div>
+  <div class="absolute top-1/3 left-1/4 w-40 h-40 blob opacity-6 animate-float-slow hidden md:block" style="background-color: var(--gold);"></div>
 
   <!-- Wildflower dots -->
   <div class="absolute bottom-0 left-0 right-0 h-32 wildflower-dots opacity-40"></div>
 
   <div class="max-w-6xl mx-auto relative w-full">
     <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-      <div class="fade-up order-2 md:order-1">
+      <div class="fade-up order-1 md:order-1">
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-5" style="background-color: {{ site.colors.primary }}22; color: var(--primary);">
           <span class="text-xs font-semibold tracking-widest uppercase font-body">{{ hero.badge }}</span>
         </div>
@@ -48,7 +48,7 @@
         </div>
       </div>
 
-      <div class="order-1 md:order-2 relative">
+      <div class="order-2 md:order-2 relative">
         <div class="relative photo-stack">
           <!-- Main photo with polaroid effect -->
           <div class="polaroid rounded-sm shadow-xl animate-float-slow" style="transform: rotate(2deg);">
